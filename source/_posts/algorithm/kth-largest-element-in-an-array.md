@@ -1,16 +1,16 @@
 ---
 title: Kth Largest Element in an Array
 date: 2017-09-18 13:11:47
-tags: [se, algorithm, c]
+tags: [algorithm, c]
 ---
 
 ## 前言
 
-- 本博客作为《算法与设计》课程第二周的作业
-- 题目来源：[LeetCode 215](https://leetcode.com/problems/kth-largest-element-in-an-array)
+- 本博客作为《算法与设计》课程第 2 周的作业
+- 题目来源：[LeetCode #215](https://leetcode.com/problems/kth-largest-element-in-an-array)
 - 题目类型：Divide and Conquer
 - 编程语言：C
-- 运行结果：![](imgs/1.png)
+- 运行结果：![](images/result.png)
 
 ## 问题描述
 
@@ -53,7 +53,7 @@ Quicksort和Mergesort算法都是来源于分治思想，因此，我们可以�
 - findKthLargest(小于pivot的数组, k - large_len - equal_len)
 
 算法其实不复杂，就是下面两步：
-- STEP 1. 将数组划分成三个子数组，可参考Quicksort的划分算法![](imgs/2.png)
+- STEP 1. 将数组划分成三个子数组，可参考Quicksort的划分算法![](images/partition.png)
 
 划分时，比Quicksort多出来的一步是：将与主元相等的元素交换到数组的最右边。这也是我上面提到为什么记成[[small], [large], [equal]]的原因了。
 
