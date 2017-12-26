@@ -1,7 +1,7 @@
 ---
 title: Kth Largest Element in an Array
 date: 2017-09-18 13:11:47
-tags: [algorithm, c]
+tags: [algorithm]
 ---
 
 ## 前言

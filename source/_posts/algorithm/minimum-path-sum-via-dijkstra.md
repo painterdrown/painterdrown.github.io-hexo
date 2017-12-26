@@ -1,7 +1,7 @@
 ---
 title: Minimum Path Sum (via Dijkstra)
 date: 2017-12-18 15:48:35
-tags: [algorithm, c++]
+tags: [algorithm]
 ---
 
 ## 前言

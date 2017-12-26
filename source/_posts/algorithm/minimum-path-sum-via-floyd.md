@@ -1,7 +1,7 @@
 ---
 title: Minimum Path Sum (via Floyd)
 date: 2017-12-25 14:09:58
-tags: [algorithm, c]
+tags: [algorithm]
 ---
 
 ## 前言

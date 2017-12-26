@@ -1,7 +1,7 @@
 ---
 title: Partition Equal Subset Sum
 date: 2017-12-11 19:25:22
-tags: [algorithm, java]
+tags: [algorithm]
 ---
 
 ## 前言
