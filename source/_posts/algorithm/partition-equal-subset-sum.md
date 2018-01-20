@@ -1,12 +1,12 @@
 ---
 title: Partition Equal Subset Sum
-date: 2017-12-11 19:25:22
+date: 2018-01-01 19:25:22
 tags: [algorithm]
 ---
 
 ## 前言
 
-- 本博客作为《算法与设计》课程第 15 周的作业
+- 本博客作为《算法与设计》课程第 17 周的作业
 - 题目来源：[LeetCode #416](https://leetcode.com/problems/partition-equal-subset-sum)
 - 题目类型：Dynamic Programming
 - 编程语言：Java

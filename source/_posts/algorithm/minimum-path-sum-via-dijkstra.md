@@ -6,7 +6,7 @@ tags: [algorithm]
 
 ## 前言
 
-- 本博客作为《算法与设计》课程第 16 周的作业
+- 本博客作为《算法与设计》课程第 15 周的作业
 - 题目来源：[LeetCode #64](https://leetcode.com/problems/minimum-path-sum)
 - 题目类型：Greedy
 - 编程语言：C++
