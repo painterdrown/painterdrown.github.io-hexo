@@ -28,10 +28,12 @@ tags: [cv]
 
 3. Xcode 新建命令行程序项目，在工程文件下进行以下设置：
 
-+ Build Phases -> Link Binary With Libraries 添加 /usr/local/Cellar/opencv/<版本>/lib 中的所有 .dylib 文件。
++ Build Phases -> Link Binary With Libraries 添加 /usr/local/Cellar/opencv/<版本>/lib 中的所有 .dylib 文件
 
 ![Build Phases](images/setting-1.png)
 
-+ Build Settings -> Search Paths 添加 /usr/local/include 和 /usr/local/lib。
++ Build Settings -> Search Paths 添加 /usr/local/include 和 /usr/local/lib
 
 ![Build Settings](images/setting-2.png)
+
+4. 配置完毕，在 cpp 文件直接：`#include "opencv2/opencv.hpp"`
