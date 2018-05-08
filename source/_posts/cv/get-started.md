@@ -3,6 +3,7 @@ title: 计算机视觉学习笔记：起步
 date: 2018-03-27 00:18:00
 tags: [cv]
 ---
+# 计算机视觉学习笔记：起步
 
 ## 前言
 
@@ -14,9 +15,13 @@ tags: [cv]
 
 > [王晓刚（香港中文大学）教授关于深度学习的课程](http://www.ee.cuhk.edu.hk/~xgwang/)
 
-## 安装 OpenCV
+## 部署环境
 
-师兄提到玩计算机视觉必定要碰 OpenCV，所以这里讲一下我的安装过程。由于我用的是 macOS，比较方便的做法是：Xcode + OpenCV 的环境。
+师兄提到玩计算机视觉必定要碰 OpenCV，所以这里讲一下我的安装过程。
+
+### OpenCV & C++
+
+由于我用的是 macOS，比较方便的做法是：Xcode + OpenCV 的环境。
 
 1. 使用 brew 安装：`brew install opencv`
 
@@ -39,7 +44,6 @@ tags: [cv]
 4. 配置完毕，在 cpp 文件直接：`#include "opencv2/opencv.hpp"`，测试代码：
 
   ```C++
-  #include <iostream>
   #include "opencv2/opencv.hpp"
   using namespace cv;
 
@@ -52,3 +56,33 @@ tags: [cv]
       return 0;
   }
   ```
+
+### OpenCV & Python
+
+最近在看《OpenCV 3 计算机视觉 Python 语言实现》，里面需要搭 OpenCV + Python 的环境，此外要需要引入外部模块 contrib。为了满足这些条件，这次是用源码编译安装的。
+
+1. 获取源码
+
+```sh
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv
+mkdir build
+cd build
+```
+
+2. 编译、安装
+
+```sh
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+      -D CMAKE_INSTALL_PREFIX=/usr/local \
+      -D PYTHON2_PACKAGES_PATH=/usr/local/lib/python2.7/site-packages \
+      -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+make -j4
+sudo make install
+```
+
+3. 添加 python 连接关系
+
+```sh
+```
