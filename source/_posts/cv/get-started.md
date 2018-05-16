@@ -1,9 +1,8 @@
 ---
-title: 计算机视觉学习笔记：起步
+title: 计算机视觉学习笔记：Get Started
 date: 2018-03-27 00:18:00
 tags: [cv]
 ---
-# 计算机视觉学习笔记：起步
 
 ## 前言
 
@@ -14,6 +13,8 @@ tags: [cv]
 > [吴恩达 (Andrew Ng) 关于机器学习的公开课](http://open.163.com/special/opencourse/machinelearning.html)
 
 > [王晓刚（香港中文大学）教授关于深度学习的课程](http://www.ee.cuhk.edu.hk/~xgwang/)
+
+> [李飞飞关于 CNN 的计算机视觉公开课](http://study.163.com/course/courseMain.htm?courseId=1004697005)
 
 ## 部署环境
 
@@ -27,19 +28,19 @@ tags: [cv]
 
 2. 安装完之后，可以看到以下目录及文件：
 
-  + /usr/local/Cellar/opencv
-  + /usr/local/include
-  + /usr/local/lib
+    + /usr/local/Cellar/opencv
+    + /usr/local/include
+    + /usr/local/lib
 
 3. Xcode 新建命令行程序项目，在工程文件下进行以下设置：
 
-  + Build Phases -> Link Binary With Libraries 添加 /usr/local/Cellar/opencv/<版本>/lib 中的所有 .dylib 文件
+    + Build Phases -> Link Binary With Libraries 添加 /usr/local/Cellar/opencv/<版本>/lib 中的所有 .dylib 文件
 
-  ![Build Phases](images/setting-1.png)
+    ![Build Phases](images/setting-1.png)
 
-  + Build Settings -> Search Paths 添加 /usr/local/include 和 /usr/local/lib
+    + Build Settings -> Search Paths 添加 /usr/local/include 和 /usr/local/lib
 
-  ![Build Settings](images/setting-2.png)
+    ![Build Settings](images/setting-2.png)
 
 4. 配置完毕，在 cpp 文件直接：`#include "opencv2/opencv.hpp"`，测试代码：
 

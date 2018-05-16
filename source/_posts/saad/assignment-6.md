@@ -13,8 +13,8 @@ tags: [saad]
 
 事件集合 E = { new reservation, make changes, check the order, pay for the order, manager grant, invoice, user cancel, time out, manager cancel }。
 
-![](images/usm.png)
+![usm](images/usm.png)
 
 ## 研究天猫退货流程活动图，对退货业务对象状态建模
 
-![](images/taobao.png)
+![tianmao](images/taobao.png)
