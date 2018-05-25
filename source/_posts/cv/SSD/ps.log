@@ -1,0 +1,6 @@
+zhengzh+ 29913  0.0  0.0  45244  4672 ?        Ss   May20   0:00 /lib/systemd/systemd --user
+zhengzh+ 29914  0.0  0.0 211248  2472 ?        S    May20   0:00 (sd-pam)
+zhengzh+ 31938  778  9.7 75262736 6435336 ?    Sl   08:48 326:49 ./build/tools/caffe train --solver=models/VGGNet/VOC0712/SSD_300x300/solver.prototxt --weights=models/VGGNet/VGG_ILSVRC_16_layers_fc_reduced.c
+zhengzh+ 32290  0.0  0.0  94920  3264 ?        R    09:05   0:00 sshd: zhengzhao@pts/24
+zhengzh+ 32291  0.0  0.0  24376  5472 pts/24   Ss   09:05   0:00 -bash
+zhengzh+ 32514  0.0  0.0  39096  3420 pts/24   R+   09:29   0:00 ps aux
